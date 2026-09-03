@@ -1,0 +1,12 @@
+# Normaliza los finales de línea al versionar. Sin esto, un repo que se edita
+# desde Windows y desde Linux genera diffs enormes en archivos que nadie tocó.
+* text=auto
+
+# Los notebooks y los CSV se guardan siempre con LF
+*.ipynb text eol=lf
+*.csv   text eol=lf
+
+# Binarios: git no los toca
+*.pdf binary
+*.png binary
+*.jpg binary
